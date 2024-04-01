@@ -1,6 +1,7 @@
 import React from "react";
 import reactLogo from "./assets/react.svg";
 import { Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 const App = () => {
 	return (
@@ -19,6 +20,7 @@ const App = () => {
 			<p className="text-white">
                 <Routes>
                     <Route path="/" element={<h1>React Vite Starter</h1>} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/dashboard" element={<h1>Dashboard</h1>} />
                 </Routes>
             </p>
